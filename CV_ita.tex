@@ -1,0 +1,238 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{paracol}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+
+% ----------------------------
+% Header/Footer
+% ----------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+
+% ----------------------------
+% Custom formatting
+% ----------------------------
+\newcommand{\sectionsep}{\vspace{0.5em}\hrule\vspace{0.5em}}
+\newcommand{\descript}[1]{\textit{#1}}
+\newcommand{\location}[1]{\textcolor{gray}{#1}}
+\newcommand{\runsubsection}[1]{\textbf{#1}}
+
+\newenvironment{tightemize}{
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=2pt, parsep=0pt]
+}{\end{itemize}}
+
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% ----------------------------
+% Name and contact
+% ----------------------------
+\begin{center}
+    {\Huge \textbf{Emanuele Aquilia}}\\[1mm]
+    \href{mailto:ema.aqui.02@gmail.com}{ema.aqui.02@gmail.com} \\
+    \href{https://github.com/Emanuele-Aquilia}{GitHub} \textbullet{} 
+    \href{https://www.linkedin.com/in/emanuele-aquilia-775072266/}{LinkedIn} \\
+    {\small Ultimo aggiornamento: \today}
+\end{center}
+\sectionsep
+
+% ========================
+% Pagina 1
+% ========================
+\begin{paracol}{2}
+\setlength{\columnsep}{1cm}
+\columnratio{0.6,0.4}
+
+% ----------------------------
+% COLONNA SINISTRA
+% ----------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ESPERIENZA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Esperienze}
+
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\descript{| Responsabile Divisione IT} \\
+\location{Set 2025 – Presente | Torino, Italia}
+\begin{tightemize}
+\item Gestione di un team di studenti per la progettazione, implementazione e manutenzione di sistemi IT per biciclette prototipo.
+\item Collaborazione con la Divisione Elettronica per lo sviluppo e il test di sistemi embedded e sensori.
+\item Supporto alla pianificazione, gestione delle tempistiche e ottimizzazione del budget di progetto.
+\item Coordinamento della comunicazione inter-divisione e risoluzione rapida dei problemi tecnici.
+\item Sviluppo di strumenti software per il monitoraggio e l’analisi delle prestazioni dei prototipi.
+\item Organizzazione di riunioni e workshop per l’integrazione dei nuovi membri e la presentazione dei progressi della divisione.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\descript{| Membro Divisione IT} \\
+\location{Mar 2025 – Presente | Torino, Italia}
+\begin{tightemize}
+\item Sviluppo di firmware per i sistemi elettronici a bordo delle biciclette prototipo.
+\item Esecuzione di test di sistema per verificare affidabilità e stabilità in condizioni reali.
+\item Supporto alla Divisione Elettronica durante le giornate di test in pista e risoluzione di problemi tecnici.
+\item Collaborazione alla progettazione e sviluppo di PCB, acquisendo esperienza pratica con l’integrazione hardware.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGETTI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Progetti}
+
+\runsubsection{Rowhammer Emulator in QEMU} 
+\descript{| Sviluppatore} \\
+\location{Mag 2025 – Ott 2025 | Torino, Italia}
+\begin{tightemize}
+\item Sviluppato un emulatore Rowhammer integrato in QEMU per simulare attacchi in ambienti virtualizzati.
+\item Implementati pattern di accesso alla memoria per provocare bit flip nei moduli DRAM.
+\item Realizzate varianti di attacco single-sided, double-sided e PARA.
+\item Eseguita un’analisi delle prestazioni per valutarne l’efficacia in scenari realistici.
+\item Documentata l’architettura dell’emulatore e le linee guida per la ricerca futura nel campo della sicurezza hardware.
+\end{tightemize}
+\sectionsep
+
+% ----------------------------
+% COLONNA DESTRA
+% ----------------------------
+\switchcolumn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ISTRUZIONE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Formazione}
+
+\subsection*{Politecnico di Torino}
+\descript{Laurea Magistrale in Ingegneria Informatica — Curriculum Embedded Systems}\\
+\location{Prevista: Marzo 2027 | Torino, Italia} \\
+DAUIN (Dipartimento di Automatica e Informatica)
+\sectionsep
+
+\subsection*{Politecnico di Torino}
+\descript{Laurea Triennale in Ingegneria Informatica}\\
+\location{Luglio 2024 | Torino, Italia} \\
+DAUIN (Dipartimento di Automatica e Informatica) \\
+\location{Voto finale: 93 / 110}
+\sectionsep
+
+\subsection*{IIS Leonardo, Giarre}
+\descript{Diploma di Liceo Scientifico — Scienze Applicate}\\
+\location{Luglio 2020 | Giarre, Catania, Italia} \\
+\location{Voto finale: 96 / 100}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMPETENZE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Competenze}
+
+\subsection*{Linguaggi di Programmazione}
+\location{Intermedio (3+ anni):} Python \textbullet{} Bash \textbullet{} C\\
+\location{Base (1+ anni):} VHDL \textbullet{} Assembly \textbullet{} LaTeX\\
+\location{Conoscenza iniziale:} Verilog
+\sectionsep
+
+\subsection*{Tecnologie e Strumenti}
+Git / GitHub \textbullet{} Linux / UNIX \textbullet{} Windows \\
+Programmazione e debug di microcontrollori \textbullet{} Protocolli seriali (I2C, UART, SPI) \\
+CAN Bus \textbullet{} RTOS (FreeRTOS) \textbullet{} Progettazione PCB \textbullet{} Altium Designer
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LINGUE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Lingue}
+Italiano: Madrelingua \\
+Inglese: Avanzato (C2)
+
+\end{paracol}
+
+% ========================
+% Pagina 2
+% ========================
+\clearpage
+\begin{paracol}{2}
+\setlength{\columnsep}{1cm}
+\columnratio{0.6,0.4}
+
+% ----------------------------
+% COLONNA SINISTRA
+% ----------------------------
+
+\section*{Progetti Aggiuntivi}
+
+\runsubsection{Vertigo e Refuso Firmware} 
+\descript{| Sviluppatore} \\
+\location{Mar 2025 – Presente | Torino, Italia}
+\begin{tightemize}
+\item Sviluppo del firmware per Vertigo e Refuso, due PCB utilizzate per acquisizione dati e controllo motore.
+\item Implementazione di protocolli di comunicazione (I2C, UART, SPI) per l’interfacciamento dei sensori; Refuso invia i dati del cambio al CAN bus.
+\item Sviluppo di algoritmi di controllo motore su Vertigo basati sui dati di Refuso, con cambio sequenziale e invio del rapporto inserito sul CAN bus per analisi e visualizzazione.
+\item Test e debug del firmware per garantirne l’affidabilità e le prestazioni in condizioni reali.
+\item Collaborazione con ingegneri hardware per ottimizzare l’integrazione firmware-hardware.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ALTRE INFORMAZIONI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Informazioni Aggiuntive}
+
+\subsection*{Collegio Renato Einaudi}
+\location{Aprile 2021 – Presente | Torino, Italia} \\
+Membro di una residenza universitaria di merito accreditata dal MIUR. Partecipazione a programmi accademici e formativi personalizzati, workshop interdisciplinari, attività culturali e sportive. Sviluppo di competenze trasversali in lavoro di squadra, mentoring e organizzazione di progetti.
+\sectionsep
+
+\subsection*{Tutoraggio}
+Supporto accademico a studenti più giovani in programmazione, matematica e fisica, assistendo nella preparazione di esami ed esercitazioni. Attività di tutoraggio in Python e C durante gli studi liceali e universitari, promuovendo la comprensione di concetti fondamentali e capacità di problem solving.
+\sectionsep
+
+% ----------------------------
+% COLONNA DESTRA
+% ----------------------------
+\switchcolumn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CORSI UNIVERSITARI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Corsi Universitari}
+
+\subsection*{Laurea Magistrale}
+Computer Architecture II \\
+Cybersecurity for Embedded Systems \\
+Synthesis and Optimization of Digital Systems \\
+Microelectronic Systems \\
+Software Engineering \\
+Big Data: Architectures and Data Analytics \\
+Data Science and Database Technologies
+\sectionsep
+
+\subsection*{Laurea Triennale}
+Elettromagnetismo e Teoria dei Circuiti \\
+Elettronica Applicata \\
+Sistemi Elettronici, Tecnologie e Misure \\
+Programmazione a Oggetti \\
+Controlli Automatici \\
+Teoria ed Elaborazione dei Segnali \\
+Reti di Calcolatori \\
+Architettura dei Calcolatori I \\
+Basi di Dati \\
+Analisi I-II \\
+Algebra Lineare e Geometria \\
+Metodi Matematici per l’Ingegneria \\
+Sistemi Operativi \\
+Algoritmi e Strutture Dati \\
+Tecniche di Programmazione \\
+Informatica
+\sectionsep
+
+\end{paracol}
+
+\end{document}

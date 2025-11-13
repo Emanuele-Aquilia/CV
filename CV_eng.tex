@@ -1,0 +1,236 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{paracol}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+
+% ----------------------------
+% Header/Footer
+% ----------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+
+% ----------------------------
+% Custom formatting
+% ----------------------------
+\newcommand{\sectionsep}{\vspace{0.5em}\hrule\vspace{0.5em}}
+\newcommand{\descript}[1]{\textit{#1}}
+\newcommand{\location}[1]{\textcolor{gray}{#1}}
+\newcommand{\runsubsection}[1]{\textbf{#1}}
+
+\newenvironment{tightemize}{
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=2pt, parsep=0pt]
+}{\end{itemize}}
+
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% ----------------------------
+% Name and contact
+% ----------------------------
+\begin{center}
+    {\Huge \textbf{Emanuele Aquilia}}\\[1mm]
+    \href{mailto:ema.aqui.02@gmail.com}{ema.aqui.02@gmail.com} \\
+    \href{https://github.com/Emanuele-Aquilia}{GitHub} \textbullet{} 
+    \href{https://www.linkedin.com/in/emanuele-aquilia-775072266/}{LinkedIn} \\
+    {\small Last Updated: \today}
+\end{center}
+\sectionsep
+
+% ========================
+% Page 1
+% ========================
+\begin{paracol}{2}
+\setlength{\columnsep}{1cm}
+\columnratio{0.6,0.4}
+
+% ----------------------------
+% LEFT COLUMN
+% ----------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Experience}
+
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\descript{| IT Division Leader} \\
+\location{Sep 2025 – Present | Turin, Italy}
+\begin{tightemize}
+\item Lead a team of students in designing, implementing, and maintaining IT systems for prototype bikes.
+\item Collaborated with the Electronics Division to develop and test embedded systems and sensors.
+\item Assisted the Electronics Division Leader in planning, timelines, and budget optimization.
+\item Coordinated cross-functional communication and resolved technical issues efficiently.
+\item Implemented software tools for monitoring prototype performance.
+\item Organized meetings and workshops to introduce newcomers and present division progress.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\descript{| IT Division Member} \\
+\location{Mar 2025 – Present | Turin, Italy}
+\begin{tightemize}
+\item Developed firmware for onboard electronic systems of prototype bikes.
+\item Conducted comprehensive system testing for durability and stability.
+\item Supported Electronics Division during track days, troubleshooting technical issues.
+\item Collaborated on PCB design and development to gain hands-on hardware experience.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}
+
+\runsubsection{Rowhammer Emulator in QEMU} 
+\descript{| Developer} \\
+\location{May 2025 – Oct 2025 | Turin, Italy}
+\begin{tightemize}
+\item Developed a Rowhammer emulator integrated into QEMU to simulate attacks in virtualized environments.
+\item Implemented memory access patterns to trigger bit flips in DRAM modules.
+\item Implemented single-sided, double-sided, and PARA Rowhammer techniques.
+\item Conducted performance evaluations to measure effectiveness in real-world scenarios.
+\item Documented the emulator's architecture and usage for research purposes.
+\end{tightemize}
+\sectionsep
+
+% ----------------------------
+% RIGHT COLUMN
+% ----------------------------
+\switchcolumn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Education}
+
+\subsection*{Politecnico di Torino}
+\descript{MSc in Computer Engineering — Embedded Systems track}\\
+\location{Expected March 2027 | Turin, Italy} \\
+DAUIN (Department of Control and Computer Engineering)
+\sectionsep
+
+\subsection*{Politecnico di Torino}
+\descript{BSc in Computer Engineering}\\
+\location{July 2024 | Turin, Italy} \\
+DAUIN (Department of Control and Computer Engineering) \\
+\location{Final Grade: 93 / 110}
+\sectionsep
+
+\subsection*{IIS Leonardo, Giarre}
+\descript{High School Diploma — Applied Sciences}\\
+\location{July 2020 | Giarre, Catania, Italy} \\
+\location{Final Grade: 96 / 100}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Skills}
+
+\subsection*{Programming Languages}
+\location{Intermediate (3+ years):} Python \textbullet{} Bash \textbullet{} C\\
+\location{Beginner (1+ years):} VHDL \textbullet{} Assembly \textbullet{} LaTeX\\
+\location{Familiar (0+ years):} Verilog
+\sectionsep
+
+\subsection*{Technologies \& Tools}
+Git / GitHub \textbullet{} Linux / UNIX \textbullet{} Windows \\
+Microcontroller programming \& debugging \textbullet{} Serial protocols (I2C, UART, SPI) \\
+CAN Bus \textbullet{} RTOS (FreeRTOS) \textbullet{} PCB Design \textbullet{} Altium Designer
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LANGUAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Languages}
+Italian: Native \\
+English: Advanced (C2)
+
+\end{paracol}
+
+% ========================
+% Page 2
+% ========================
+\clearpage
+\begin{paracol}{2}
+\setlength{\columnsep}{1cm}
+\columnratio{0.6,0.4}
+
+% ----------------------------
+% LEFT COLUMN
+% ----------------------------
+\section*{Additional Projects}
+
+\runsubsection{Vertigo and Refuso Firmware} 
+\descript{| Developer} \\
+\location{Mar 2025 – Present | Turin, Italy}
+\begin{tightemize}
+\item Developed the firmware for Vertigo and Refuso, two PCBs for data acquisition and motor control.
+\item Implemented communication protocols (I2C, UART, SPI) for sensor interfacing; Refuso sends gearbox data to the CAN bus.
+\item Implemented motor control algorithms on Vertigo based on Refuso data, enabling sequential gear shifting and sending the inserted gear to the CAN bus for analysis and display.
+\item Tested and debugged firmware to ensure reliability and performance in real-world conditions.
+\item Collaborated with hardware engineers to optimize firmware-hardware integration.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ADDITIONAL INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Additional Information}
+
+\subsection*{Collegio Renato Einaudi}
+\location{April 2021 – Present | Turin, Italy} \\
+Member of a MIUR-accredited merit-based student housing community. Participated in personalized academic and soft-skill programs, cultural and interdisciplinary workshops, student leadership activities, and sports events. Gained experience in teamwork, mentoring, and project organization.
+\sectionsep
+
+\subsection*{Tutoring}
+Provided academic support to younger students in programming, mathematics, and physics, assisting with assignments, exam preparation, and practical exercises. Tutored in Python and C during high school and undergraduate studies, fostering understanding of fundamental concepts and problem-solving skills.
+\sectionsep
+
+% ----------------------------
+% RIGHT COLUMN
+% ----------------------------
+\switchcolumn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Coursework}
+
+\subsection*{Graduate (MSc)}
+Computer Architecture II \\
+Cybersecurity for Embedded Systems \\
+Synthesis and Optimization of Digital Systems \\
+Microelectronic Systems \\
+Software Engineering \\
+Big Data: Architectures and Data Analytics \\
+Data Science and Database Technologies
+\sectionsep
+
+\subsection*{Undergraduate (BSc)}
+Electromagnetism and Circuit Theory \\
+Applied Electronics \\
+Electronic Systems, Technologies and Measurements \\
+Object-Oriented Programming \\
+Automatic Control \\
+Signal Theory and Processing \\
+Computer Networks \\
+Computer Architecture I \\
+Databases \\
+Calculus I-II \\
+Linear Algebra and Geometry \\
+Mathematical Methods for Engineering \\
+Operating Systems \\
+Algorithms and Data Structures \\
+Programming Techniques \\
+Computer Science
+\sectionsep
+
+\end{paracol}
+
+\end{document}
