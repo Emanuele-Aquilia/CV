@@ -1,9 +1,14 @@
 # Ignore everything
 *
 
-# But do not ignore .tex and .pdf files
+# Do not ignore directories so negations can match files inside
+!**/
+
+# Do not ignore .tex and .pdf files (root and in subdirectories)
 !*.tex
 !*.pdf
+!**/*.tex
+!**/*.pdf
 
 # Do not ignore .gitignore itself
 !.gitignore
