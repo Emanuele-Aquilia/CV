@@ -6,6 +6,8 @@
 \usepackage{xcolor}
 \usepackage{lmodern}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hwemoji}
 
 % ----------------------------
 % Header/Footer
@@ -45,9 +47,13 @@
 % ========================
 % Page 1
 % ========================
+\columnratio{0.6}
+\setlength{\columnsep}{1cm} 
+\def\columnseprulecolor{\color{gray}}
+\setlength{\columnseprule}{0.5pt}
 \begin{paracol}{2}
 \setlength{\columnsep}{1cm}
-\columnratio{0.6,0.4}
+
 
 % ----------------------------
 % LEFT COLUMN
@@ -57,8 +63,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Experience}
 
-\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
-\descript{| IT Division Leader} \\
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent \includegraphics[width=1.2cm]{../images/Logo_Team_Black.png}}} 
+\descript{| IT Division Leader}  \\
 \location{Sep 2025 – Present | Turin, Italy}
 \begin{tightemize}
 \item Lead a team of students in designing, implementing, and maintaining IT systems for prototype bikes.
@@ -70,7 +76,7 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent \includegraphics[width=1.2cm]{../images/Logo_Team_Black.png}}} 
 \descript{| IT Division Member} \\
 \location{Mar 2025 – Present | Turin, Italy}
 \begin{tightemize}
@@ -90,9 +96,9 @@
 \descript{| Developer} \\
 \location{May 2025 – Oct 2025 | Turin, Italy}
 \begin{tightemize}
-\item Developed a Rowhammer emulator integrated into QEMU to simulate attacks in virtualized environments.
+\item Developed a Rowhammer emulator integrated into \\ QEMU to simulate attacks in virtualized environments.
 \item Implemented memory access patterns to trigger bit flips in DRAM modules.
-\item Implemented single-sided, double-sided, and PARA Rowhammer techniques.
+\item Implemented single-sided, double-sided, and PARA \\ Rowhammer techniques.
 \item Conducted performance evaluations to measure effectiveness in real-world scenarios.
 \item Documented the emulator's architecture and usage for research purposes.
 \end{tightemize}
@@ -108,16 +114,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Education}
 
-\subsection*{Politecnico di Torino}
+\subsection*{Politecnico di Torino \includegraphics[width=1.2cm]{../images/polito_logo_2021_blu.png}} 
 \descript{MSc in Computer Engineering — Embedded Systems track}\\
 \location{Expected March 2027 | Turin, Italy} \\
-DAUIN (Department of Control and Computer Engineering)
+DAUIN (Dipartimento di AUtomatica e INformatica)
 \sectionsep
 
-\subsection*{Politecnico di Torino}
+\subsection*{Politecnico di Torino \includegraphics[width=1.2cm]{../images/polito_logo_2021_blu.png}} 
 \descript{BSc in Computer Engineering}\\
 \location{July 2024 | Turin, Italy} \\
-DAUIN (Department of Control and Computer Engineering) \\
+DAUIN (Dipartimento di AUtomatica e INformatica) \\
 \location{Final Grade: 93 / 110}
 \sectionsep
 
@@ -132,24 +138,25 @@ DAUIN (Department of Control and Computer Engineering) \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Skills}
 
-\subsection*{Programming Languages}
-\location{Intermediate (3+ years):} Python \textbullet{} Bash \textbullet{} C\\
-\location{Beginner (1+ years):} VHDL \textbullet{} Assembly \textbullet{} LaTeX\\
+\subsection*{Programming Languages 💻}
+\location{Intermediate (3+ years):} Python \includegraphics[width=0.3cm]{../images/Python-logo.png} \textbullet{} Bash \includegraphics[width=0.3cm]{../images/Bash_Logo_Colored.png} \textbullet{} C \includegraphics[width=0.3cm]{../images/C_Programming_Language.png}\\
+\location{Beginner (1+ years):} VHDL \textbullet{} Assembly \includegraphics[width=0.3cm]{../images/assembly.png} \textbullet{} LaTeX\\
 \location{Familiar (0+ years):} Verilog
 \sectionsep
 
-\subsection*{Technologies \& Tools}
-Git / GitHub \textbullet{} Linux / UNIX \textbullet{} Windows \\
-Microcontroller programming \& debugging \textbullet{} Serial protocols (I2C, UART, SPI) \\
-CAN Bus \textbullet{} RTOS (FreeRTOS) \textbullet{} PCB Design \textbullet{} Altium Designer
+\subsection*{Technologies \& Tools 🛠}
+Git / GitHub \textbullet{} Linux / UNIX \textbullet{} Windows \\ 
+Microcontroller programming \& debugging \\ \textbullet{} Serial protocols (I2C, UART, SPI) \\
+\textbullet{}CAN Bus \textbullet{} RTOS (FreeRTOS) \textbullet{} PCB Design \textbullet{} Altium Designer \textbullet{} PCB soldering\\
+\textbullet{} QEMU \textbullet{} GDB \textbullet{} Wireshark \textbullet{} Oscilloscope \\ \textbullet{} multimeter \textbullet{} Logic Analyzer
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LANGUAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Languages}
-Italian: Native \\
-English: Advanced (C2)
+Italian: Native \includegraphics[width=0.5cm]{../images/Flag_of_Italy.png} \\
+English: Advanced (C2) \includegraphics[width=0.5cm]{../images/Flag_of_the_United_Kingdom.png} \\
 
 \end{paracol}
 
@@ -157,14 +164,16 @@ English: Advanced (C2)
 % Page 2
 % ========================
 \clearpage
+\columnratio{0.6}
+\setlength{\columnsep}{1cm} 
+\def\columnseprulecolor{\color{gray}}
+\setlength{\columnseprule}{0.5pt}
 \begin{paracol}{2}
 \setlength{\columnsep}{1cm}
-\columnratio{0.6,0.4}
 
 % ----------------------------
 % LEFT COLUMN
 % ----------------------------
-\section*{Additional Projects}
 
 \runsubsection{Vertigo and Refuso Firmware} 
 \descript{| Developer} \\
@@ -174,14 +183,31 @@ English: Advanced (C2)
 \item Implemented communication protocols (I2C, UART, SPI) for sensor interfacing; Refuso sends gearbox data to the CAN bus.
 \item Implemented motor control algorithms on Vertigo based on Refuso data, enabling sequential gear shifting and sending the inserted gear to the CAN bus for analysis and display.
 \item Tested and debugged firmware to ensure reliability and performance in real-world conditions.
-\item Collaborated with hardware engineers to optimize firmware-hardware integration.
+\item Collaborated with hardware engineers to optimize firmware hardware integration.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ADDITIONAL SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Additional Passions and Skills }
+\begin{tightemize}
+    \item Enthusiast of vintage computer systems; currently building a 65C02-based computer and developing a custom PCB to improve debugging and experimentation.
+    \item Electronics hobbyist with experience in designing, assembling, and testing custom PCBs for personal and academic projects.
+    \item Experienced in 3D printing workflows, including slicing, print parameter tuning, material selection, and choosing optimal print orientation for strength and surface quality; motivated to expand skills by learning CAD design for full end-to-end prototyping.
+    \item Interest in hardware security and secure embedded system architectures.
+    \item Chess player, mainly active in online bullet and blitz formats.
+    \item Passionate about motorcycle riding for both commuting and leisure; enjoy performing routine maintenance to deepen mechanical knowledge.
+    \item Committed to a healthy lifestyle through regular gym training and balanced nutrition.
 \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ADDITIONAL INFORMATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Additional Information}
+\section*{Soft skills \& Extracurriculars}
 
 \subsection*{Collegio Renato Einaudi}
 \location{April 2021 – Present | Turin, Italy} \\
@@ -202,7 +228,7 @@ Provided academic support to younger students in programming, mathematics, and p
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Coursework}
 
-\subsection*{Graduate (MSc)}
+\subsection*{Graduate (MSc) 📖}
 Computer Architecture II \\
 Cybersecurity for Embedded Systems \\
 Synthesis and Optimization of Digital Systems \\
@@ -212,7 +238,7 @@ Big Data: Architectures and Data Analytics \\
 Data Science and Database Technologies
 \sectionsep
 
-\subsection*{Undergraduate (BSc)}
+\subsection*{Undergraduate (BSc) 📘}
 Electromagnetism and Circuit Theory \\
 Applied Electronics \\
 Electronic Systems, Technologies and Measurements \\

@@ -10,5 +10,27 @@
 !**/*.tex
 !**/*.pdf
 
+# Do not ignore common image formats (root and in subdirectories)
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+!*.bmp
+!*.ico
+!*.webp
+!*.tif
+!*.tiff
+!**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.gif
+!**/*.svg
+!**/*.bmp
+!**/*.ico
+!**/*.webp
+!**/*.tif
+!**/*.tiff
+
 # Do not ignore .gitignore itself
 !.gitignore
