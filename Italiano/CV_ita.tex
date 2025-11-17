@@ -6,6 +6,8 @@
 \usepackage{xcolor}
 \usepackage{lmodern}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hwemoji}
 
 % ----------------------------
 % Header/Footer
@@ -45,10 +47,12 @@
 % ========================
 % Pagina 1
 % ========================
+\columnratio{0.6}
+\setlength{\columnsep}{1cm} 
+\def\columnseprulecolor{\color{gray}}
+\setlength{\columnseprule}{0.5pt}
 \begin{paracol}{2}
 \setlength{\columnsep}{1cm}
-\columnratio{0.6,0.4}
-
 % ----------------------------
 % COLONNA SINISTRA
 % ----------------------------
@@ -58,7 +62,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Esperienze}
 
-\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent \includegraphics[width=1.2cm]{../images/Logo_Team_Black.png}}} 
 \descript{| Responsabile Divisione IT} \\
 \location{Set 2025 – Presente | Torino, Italia}
 \begin{tightemize}
@@ -71,7 +75,7 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent}} 
+\runsubsection{\href{https://www.policumbent.it/en/}{Policumbent \includegraphics[width=1.2cm]{../images/Logo_Team_Black.png}}} 
 \descript{| Membro Divisione IT} \\
 \location{Mar 2025 – Presente | Torino, Italia}
 \begin{tightemize}
@@ -109,13 +113,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Formazione}
 
-\subsection*{Politecnico di Torino}
+\subsection*{Politecnico di Torino \includegraphics[width=1.2cm]{../images/polito_logo_2021_blu.png}}
 \descript{Laurea Magistrale in Ingegneria Informatica — Curriculum Embedded Systems}\\
 \location{Prevista: Marzo 2027 | Torino, Italia} \\
 DAUIN (Dipartimento di AUtomatica e INformatica)
 \sectionsep
 
-\subsection*{Politecnico di Torino}
+\subsection*{Politecnico di Torino \includegraphics[width=1.2cm]{../images/polito_logo_2021_blu.png}}
 \descript{Laurea Triennale in Ingegneria Informatica}\\
 \location{Luglio 2024 | Torino, Italia} \\
 DAUIN (Dipartimento di AUtomatica e INformatica) \\
@@ -133,24 +137,25 @@ DAUIN (Dipartimento di AUtomatica e INformatica) \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Competenze}
 
-\subsection*{Linguaggi di Programmazione}
-\location{Intermedio (3+ anni):} Python \textbullet{} Bash \textbullet{} C\\
-\location{Base (1+ anni):} VHDL \textbullet{} Assembly \textbullet{} LaTeX\\
+\subsection*{Linguaggi di Programmazione 💻}
+\location{Intermedio (3+ anni):} Python \includegraphics[width=0.3cm]{../images/Python-logo.png} \textbullet{} Bash \includegraphics[width=0.3cm]{../images/Bash_Logo_Colored.png} \textbullet{} C \includegraphics[width=0.3cm]{../images/C_Programming_Language.png}\\
+\location{Base (1+ anni):} VHDL \textbullet{} Assembly \includegraphics[width=0.3cm]{../images/assembly.png} \textbullet{} LaTeX\\
 \location{Conoscenza iniziale:} Verilog
 \sectionsep
 
-\subsection*{Tecnologie e Strumenti}
+\subsection*{Tecnologie e Strumenti 🛠}
 Git / GitHub \textbullet{} Linux / UNIX \textbullet{} Windows \\
 Programmazione e debug di microcontrollori \textbullet{} Protocolli seriali (I2C, UART, SPI) \\
-CAN Bus \textbullet{} RTOS (FreeRTOS) \textbullet{} Progettazione PCB \textbullet{} Altium Designer
+CAN Bus \textbullet{} RTOS (FreeRTOS) \textbullet{} Progettazione PCB \textbullet{} Altium Designer \textbullet{} Saldatura PCB
+\\ \textbullet{} QEMU \textbullet{} GDB \textbullet{} Wireshark \textbullet{} \\ multimetro \textbullet{} oscilloscopio \textbullet{} analizzatore logico
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LINGUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Lingue}
-Italiano: Madrelingua \\
-Inglese: Avanzato (C2)
+Italiano: Madrelingua \includegraphics[width=0.5cm]{../images/Flag_of_Italy.png}\\
+Inglese: Avanzato (C2) \includegraphics[width=0.5cm]{../images/Flag_of_the_United_Kingdom.png}
 
 \end{paracol}
 
@@ -158,15 +163,16 @@ Inglese: Avanzato (C2)
 % Pagina 2
 % ========================
 \clearpage
+\columnratio{0.6}
+\setlength{\columnsep}{1cm} 
+\def\columnseprulecolor{\color{gray}}
+\setlength{\columnseprule}{0.5pt}
 \begin{paracol}{2}
 \setlength{\columnsep}{1cm}
-\columnratio{0.6,0.4}
 
 % ----------------------------
 % COLONNA SINISTRA
 % ----------------------------
-
-\section*{Progetti Aggiuntivi}
 
 \runsubsection{Vertigo e Refuso Firmware} 
 \descript{| Sviluppatore} \\
@@ -177,6 +183,22 @@ Inglese: Avanzato (C2)
 \item Sviluppo di algoritmi di controllo motore su Vertigo basati sui dati di Refuso, con cambio sequenziale e invio del rapporto inserito sul CAN bus per analisi e visualizzazione.
 \item Test e debug del firmware per garantirne l’affidabilità e le prestazioni in condizioni reali.
 \item Collaborazione con ingegneri hardware per ottimizzare l’integrazione firmware-hardware.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PASSIONI E Skill AGGIUNTIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Passioni e Competenze Aggiuntive}
+\begin{tightemize}
+\item Appassionato di sistemi informatici vintage; attualmente sto costruendo un computer basato su 65C02 e sviluppando un PCB personalizzata per migliorare il debugging e la sperimentazione.
+\item Hobbista di elettronica con esperienza nella progettazione, assemblaggio e collaudo di PCB personalizzate per progetti personali e accademici.
+\item Esperto nei flussi di lavoro della stampa 3D, inclusi slicing, regolazione dei parametri di stampa, selezione dei materiali e scelta dell’orientamento ottimale per ottenere resistenza e qualità superficiale; motivato ad ampliare le competenze imparando il design CAD per una prototipazione completa end-to-end.
+\item Interesse per la sicurezza hardware e le architetture embedded sicure.
+\item Giocatore di scacchi, principalmente attivo nelle modalità online bullet e blitz.
+\item Appassionato di motociclismo sia per il commuting che per il tempo libero; mi piace eseguire la manutenzione ordinaria per approfondire la conoscenza meccanica.
+\item Impegnato in uno stile di vita sano attraverso allenamenti regolari in palestra e un’alimentazione equilibrata.
 \end{tightemize}
 \sectionsep
 
@@ -204,7 +226,7 @@ Supporto accademico a studenti più giovani in programmazione, matematica e fisi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Corsi Universitari}
 
-\subsection*{Laurea Magistrale}
+\subsection*{Laurea Magistrale 📖}
 Computer Architecture II \\
 Cybersecurity for Embedded Systems \\
 Synthesis and Optimization of Digital Systems \\
@@ -214,7 +236,7 @@ Big Data: Architectures and Data Analytics \\
 Data Science and Database Technologies
 \sectionsep
 
-\subsection*{Laurea Triennale}
+\subsection*{Laurea Triennale 📘}
 Elettromagnetismo e Teoria dei Circuiti \\
 Elettronica Applicata \\
 Sistemi Elettronici, Tecnologie e Misure \\
